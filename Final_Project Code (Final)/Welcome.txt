@@ -1,0 +1,5 @@
+Soon you will be asked to input a message.
+Your message will be encrypted by the following encryption algorithms:
+	Method 1: Shift Encryption
+	Method 2: Public-Key Encryption
+	Method 3: Bitwise Encryption

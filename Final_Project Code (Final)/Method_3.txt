@@ -1,0 +1,29 @@
+Bitwise Encryption
+
+Bitwise encryption is an encryption algorithm that operates according to the principles of the
+XOR (or modulus 2 additon) opperation, meaning:
+
+A (XOR) 0 = A,
+A (XOR) A = 0,
+[A (XOR) B] (XOR) C = A (XOR) [B (XOR) C],
+[B (XOR) A] (XOR) A = B (XOR) 0 = B,
+ 
+With this logic, a string of text can be encrypted by applying the bitwise XOR operator to every 
+character using a given key. To decrypt the output, merely reapplying the XOR function with the 
+key will remove the cipher.
+For example, the string "Cats rule" 
+(1000011 1100001 1110100 1110011 100000 1110010 1110101 1101100 1100101 in 8-bit ASCII) can be 
+bitwise encrypted with the repeating key 11110011 as follows:
+
+01000011 01100001 01110100 01110011 01000000 01110010 01110101 01101100 01100101
+XOR
+11110011 11110011 11110011 11110011 11110011 11110011 11110011 11110011 11110011
+---------------------------------------------------------------------------------
+10110000 10010010 11110111 10001111 10110011 10000001 10000110 10011111 10010110
+
+The XOR operator is extremely common as a component in more complex ciphers. By itself, 
+using a constant repeating key, a simple XOR cipher can trivially be broken using frequency analysis.
+Because of this it is usually used in combination with other encrytion methods.
+
+This pogram combines bitwise encryption ith variable addition to limit the effectivness of 
+frequency analysis as we will add an integer to the final value of each bit.

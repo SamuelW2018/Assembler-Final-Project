@@ -1,0 +1,8 @@
+Public-Key Encryption
+
+Pulic-Key encrytion is the most commonly used encryption method for internet and database
+password security. This method works by using a pivate key (your password) converted into
+a very large (usually prime) number and a public key (another large number) and multiplying
+them together. This method works as long as the pivate key is kept private because the only
+way to decypher, even with access to the public key is to find the number (your password) that
+was multiplied by the public key.

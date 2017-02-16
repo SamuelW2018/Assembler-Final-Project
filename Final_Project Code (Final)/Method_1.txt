@@ -1,0 +1,7 @@
+Shift Encryption
+
+Shift encrytion shifts every character in a string over a previously specified 
+length. If the shift would cause the letter to go passed 'z' the next letter would be
+'a' as you would simply restart from the beginning of the alphabet.
+
+For example, the string, "Hello zebra", shift encrypted 3 spots would be "Khoor Cheudv".
